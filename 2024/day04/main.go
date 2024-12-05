@@ -6,6 +6,14 @@ import (
 	"strings"
 )
 
+/*
+	Since this is a 2d word search, after staring at the input trying to think of an algorithm my mind immediately went
+	to kernel processing so I decided to implement my searching very similarly to kernel processing methods. Is it the
+	fastest way to do it? Definitely not (although I could get this close to O(n) if I did in in VHDL on an FPGA as I've
+	done kernel processing with that before by passing the bitstream of the "image" through a series of processing units
+	that handle each "pixel" of the filter and adding delays between these units to match the image resolution)
+*/
+
 func main() {
 	// Get input
 	input := getInput()
